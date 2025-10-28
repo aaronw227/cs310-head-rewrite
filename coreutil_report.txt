@@ -1,0 +1,8 @@
+1. What command did you implement?
+I implemented the 'head' command as a Python script named myhead.py. It replicates the functionality of GNU head by printing the first 10 lines of a file by default, and supports two flags: -n (to specify the number of lines) and -c (to specify the number of bytes).
+
+2. What was a hurdle?
+A main hurdle was managing the differences between reading files as text versus binary data. The -c flag required reading bytes directly, which meant switching between text and binary modes depending on the flag used. Handling both stdin and files in these modes also took some careful logic to ensure compatibility.
+
+3. What was easy?
+Setting up argument parsing using Python's argparse library and implementing the base functionality for reading and printing lines was straightforward. Python’s built-in file handling and iteration made it simple to read lines and control how many were displayed.
